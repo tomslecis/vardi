@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="lv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Vārdi — angļu valodas vārdu krātuve</title>
+  <meta name="description" content="Mācies angļu vārdus ar asociācijām un spēlēm.">
+  <meta name="theme-color" content="#F4F3EE">
+  <meta name="color-scheme" content="light">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Vārdi">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-route="home">
+  <main id="view" tabindex="-1"></main>
+
+  <nav class="tabbar" aria-label="Galvenā navigācija">
+    <button data-tab="home"><span data-icon="home"></span><span>Sākums</span></button>
+    <button data-tab="discover"><span data-icon="cards"></span><span>Jauni</span></button>
+    <button data-tab="learn"><span data-icon="cap"></span><span>Mācības</span></button>
+    <button data-tab="games"><span data-icon="bolt"></span><span>Spēles</span></button>
+    <button data-tab="words"><span data-icon="book"></span><span>Vārdnīca</span></button>
+  </nav>
+
+  <dialog id="sheet" class="sheet"><div class="sheet-inner"><div class="sheet-handle" aria-hidden="true"></div><div class="sheet-body"></div></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/words.js"></script>
+  <script src="js/lessons.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
